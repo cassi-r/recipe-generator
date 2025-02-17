@@ -7,35 +7,37 @@
     <title>Recipes!</title>
   </head>
   <body>
-    <header>
-      <h1>Welcome to your recipe generator</h1>
-    </header>
+    <div class="central">
+      <header>
+        <h1>AI Recipe Generator 👩‍🍳</h1>
+      </header>
 
-    <main>
-      <form>
-        <input
-          type="text"
-          placeholder="Enter ingredients you are using"
-          autofocus
-          required
-        />
-        <input type="submit" />
-      </form>
-      <div>ingredients go here</div>
-      <div>recipe instructions go here</div>
-    </main>
-
-    <footer>
-      This was coded by
-      <a href="https://github.com/cassi-r" target="_blank">Cassi Rayford</a> and
-      is open-sourced on
-      <a href="https://github.com/cassi-r/recipe-generator" target="_blank"
-        >Github</a
-      >. Hosted on
-      <a href="https://recipe-generator-with-ai.netlify.app/" target="_blank"
-        >Netlify</a
-      >
-    </footer>
+      <main>
+        <form>
+          <input
+            type="text"
+            placeholder="Enter ingredients you are using"
+            autofocus
+            required
+            class="recipe-prompt"
+          />
+          <input type="submit" class="submit-button" />
+        </form>
+        <div class="ingredients">ingredients go here</div>
+        <div class="instructions">recipe instructions go here</div>
+      </main>
+      <footer>
+        This was coded by
+        <a href="https://github.com/cassi-r" target="_blank">Cassi Rayford</a>
+        and is open-sourced on
+        <a href="https://github.com/cassi-r/recipe-generator" target="_blank"
+          >Github</a
+        >. Hosted on
+        <a href="https://recipe-generator-with-ai.netlify.app/" target="_blank"
+          >Netlify</a
+        >
+      </footer>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>
