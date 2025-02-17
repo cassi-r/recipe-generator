@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>Recipes!</title>
   </head>
   <body>
@@ -13,18 +14,20 @@
       </header>
 
       <main>
-        <form>
+        <form id="recipe-form">
           <input
             type="text"
-            placeholder="Enter ingredients you are using"
+            placeholder="Enter the key ingredient you would like to use"
             autofocus
             required
             class="recipe-prompt"
           />
           <input type="submit" class="submit-button" />
         </form>
-        <div class="ingredients">ingredients go here</div>
-        <div class="instructions">recipe instructions go here</div>
+        <div class="ingredients" id="ingredients"></div>
+        <div class="instructions" id="instructions">
+          recipe instructions go here
+        </div>
       </main>
       <footer>
         This was coded by
