@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <title>Recipes!</title>
   </head>
   <body>
@@ -21,13 +22,12 @@
             autofocus
             required
             class="recipe-prompt"
+            id="user-input"
           />
           <input type="submit" class="submit-button" />
         </form>
         <div class="ingredients" id="ingredients"></div>
-        <div class="instructions" id="instructions">
-          recipe instructions go here
-        </div>
+        <div class="instructions" id="instructions">Enjoy!</div>
       </main>
       <footer>
         This was coded by

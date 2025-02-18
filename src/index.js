@@ -1,12 +1,21 @@
-function generateRecipe(event) {
-  event.preventDefault();
-
-  new Typewriter("#ingredients", {
-    strings: "ingredients listed here",
+function displayRecipe(response) {
+  new Typewriter("#ingredients", "#instructions", {
+    strings: response.data.answer,
     autoStart: true,
-    delay: 50,
+    delay: 1,
     cursor: "",
   });
+}
+
+function generateRecipe(event) {
+  event.preventDefault();
+  let userInput = document.querySelector("#user-input");
+  let apiKey = "eb2dt3eff4e3bdadf1b2o03ae3a5430d";
+  let prompt = `User instructions: generate a recipe using ${userInput.value}`;
+  let context = `You are a world renowned chef who wants to create a recipe with the ${userInput.value}. The recipe should be easy to follow and not too time consuming.`;
+  let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
+
+  axios.get(apiUrl).then(displayRecipe);
 }
 
 let recipeFormElement = document.querySelector("#recipe-form");

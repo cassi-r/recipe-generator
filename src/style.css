@@ -63,6 +63,7 @@ form {
 
 .instructions {
   font-size: 18px;
+  text-align: center;
   padding: 20px;
   line-height: 1;
   background-color: rgba(119, 6, 6, 0.879);
