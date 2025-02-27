@@ -57,7 +57,7 @@ form {
 .ingredients {
   font-size: 16px;
   padding: 20px;
-  line-height: 0.5;
+  line-height: 1.5;
   background-color: rgba(251, 220, 181, 0.864);
   border-top: 3px solid maroon;
   border-bottom: 3px solid maroon;
